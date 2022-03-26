@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mobile/Screen/home_screen.dart';
+import 'package:mobile/Screen/screens.dart';
 
 void main() {
   runApp(const MyApp());
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
         scaffoldBackgroundColor: Colors.black,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: NavScreen(),
     );
   }
 }
