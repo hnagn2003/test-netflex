@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mobile/details.dart';
-import 'package:mobile/models/profile.dart';
-import 'package:mobile/screens/profiles_more.dart';
+import 'package:mobile/Screen/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,6 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Netflix',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -26,12 +25,11 @@ class MyApp extends StatelessWidget {
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
         primarySwatch: Colors.blue,
-        fontFamily: 'Netflix Sans',
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+        scaffoldBackgroundColor: Colors.black,
       ),
-      home: ProfileScreen(
-        profiles: demoProfile[0],
-      ),
-      debugShowCheckedModeBanner: false,
+      home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
 }
+
