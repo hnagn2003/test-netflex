@@ -43,8 +43,10 @@ class _MyHomePageState extends State<MyHomePage> {
           onPressed: () => {},
         ),
         appBar: PreferredSize(
-          preferredSize: Size(100.0, 50.0),
-          child: CustomAppBar(),
+          preferredSize: Size(screenSize.width, 50.0),
+          child: CustomAppBar(
+            scrollOffset: _scrollOffset,
+          ),
         ),
         body: CustomScrollView(
           controller: _scrollController,
