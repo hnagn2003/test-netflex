@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:mobile/screens/screens.dart';
-import 'package:mobile/screens/splash.dart';
 
 void main() {
   runApp(const MyApp());
