@@ -3,6 +3,7 @@ import 'package:mobile/assets.dart';
 import 'package:mobile/models/profile.dart';
 import 'package:mobile/screens/info_screen.dart';
 import 'package:mobile/widgets/vertical_icon_button.dart';
+import 'package:page_transition/page_transition.dart';
 
 import '../data/data.dart';
 import 'screens.dart';
@@ -19,7 +20,8 @@ class ComingSoon extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.black,
-        title: Text(
+        automaticallyImplyLeading: false,
+        title: const Text(
           'Coming Soon',
           style: TextStyle(
             fontSize: 20.0,
@@ -30,12 +32,15 @@ class ComingSoon extends StatelessWidget {
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(
-                  builder: (context) => SearchPage(),
+                PageTransition(
+                  type: PageTransitionType.rightToLeft,
+                  duration: const Duration(milliseconds: 300),
+                  reverseDuration: const Duration(milliseconds: 300),
+                  child: SearchPage(),
                 ),
               );
             },
-            icon: Icon(Icons.search),
+            icon: const Icon(Icons.search),
             color: Colors.white,
           ),
           const SizedBox(
@@ -55,11 +60,13 @@ class ComingSoon extends StatelessWidget {
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(
-                  builder: (context) =>
-                      ProfileScreen(
-                        profiles: demoProfile[0],
-                      ),
+                PageTransition(
+                  type: PageTransitionType.rightToLeft,
+                  duration: const Duration(milliseconds: 300),
+                  reverseDuration: const Duration(milliseconds: 300),
+                  child: ProfileScreen(
+                    profiles: demoProfile[0],
+                  ),
                 ),
               );
             },
@@ -159,7 +166,7 @@ class ComingSoon extends StatelessWidget {
                 ),
                 Text(
                   'Avatar',
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontSize: 20.0,
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
@@ -167,7 +174,7 @@ class ComingSoon extends StatelessWidget {
                 ),
                 Text(
                   sintelContent.description,
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontSize: 12.0,
                     color: Colors.grey,
                   ),
