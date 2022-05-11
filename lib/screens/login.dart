@@ -94,6 +94,7 @@ class SignInButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
+    print(size);
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 20),
       child: SizedBox(

@@ -7,3 +7,4 @@ export 'movie_card.dart';
 export 'text_field.dart';
 export 'download_movie.dart';
 export 'episode.dart';
+export 'video_overlay.dart';

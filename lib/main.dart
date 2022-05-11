@@ -20,7 +20,10 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: Colors.black,
         fontFamily: 'Netflix Sans',
       ),
-      home: const Splash(),
+      home: const VideoApp(
+        movieUrl:
+            'https://flutter.github.io/assets-for-api-docs/assets/videos/bee.mp4',
+      ),
     );
   }
 }
