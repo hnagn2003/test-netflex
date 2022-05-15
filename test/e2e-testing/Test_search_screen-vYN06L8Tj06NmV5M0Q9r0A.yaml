@@ -1,0 +1,132 @@
+id: XZFTbXEBc0CXyVRc6r8miQ
+projectId: xYIZoCzdhkuoJGnRjIWllg
+projectName: My first Project
+created: 2022-05-15T15:59:16.0365543Z
+owner: Nam Vũ
+protocol: 1
+tests:
+- id: vYN06L8Tj06NmV5M0Q9r0A
+  name: Test search screen
+  description: ''
+  platform: Android
+  type: Mobile
+  driverType: Appium_Android
+  version: 0.1
+  creationDate: 2022-05-15T15:56:23.0000000
+  modificationDate: 2022-05-15T15:56:59.0000000
+  settings:
+    automationAssistant: true
+    deviceId: 192.168.247.102:5555
+    appId: 2kxK1aB_3ketnJNYG3hlkg
+    stepSleepTime: 500
+    stepTimeout: 15000
+    stepSleepTiming: Before
+    stepFailureBehaviorType: Abort
+    stepTakeScreenshotConditionType: Failure
+  application:
+    id: 2kxK1aB_3ketnJNYG3hlkg
+    androidActivity: com.example.mobile.MainActivity
+    androidPackage: com.example.mobile
+    name: mobile
+    platform: Android
+  steps:
+  - id: cWtjX-b3kEWndtF740I0VQ
+    comments: Clear application data and restart (Auto-generated)
+    enabled: true
+    invertResult: false
+    order: 1
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 1b89acc3-5003-4ae6-a8c1-c1732e09ef45
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 7lvah9HsPU2kSFJiriYh7w
+    enabled: true
+    invertResult: false
+    order: 2
+    repeat: 1
+    type: Action
+    elementId: 6-FT2g4GUUyesv5mdpA92w
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: -X5108XXhUabDeoaouSS7g
+    enabled: true
+    invertResult: false
+    order: 3
+    repeat: 1
+    type: Action
+    elementId: _BaOdIo0n0mYws0MV3p3VA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  parameters: []
+auxTests: []
+elements:
+- id: 6-FT2g4GUUyesv5mdpA92w
+  name: >-
+    Coming Soon
+
+    Tab 2 of 3
+  type:
+    id: jUwODgyNjAyNzk2NTk4NDY
+    name: android.view.View
+    source: System
+  locators:
+  - name: XPATH
+    value: >-
+      //android.view.View[@content-desc = 'Coming Soon
+
+      Tab 2 of 3']
+    priority: 0
+  - name: XPATH
+    value: //android.view.View[5]/android.view.View[2]
+    priority: 1
+  - name: XPATH
+    value: //android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[5]/android.view.View[2]
+    priority: 2
+- id: _BaOdIo0n0mYws0MV3p3VA
+  name: ANDROID.WIDGET.BUTTON
+  type:
+    id: jUwODgyNjAyNzk2NTk4NDU
+    name: android.widget.Button
+    source: System
+  locators:
+  - name: XPATH
+    value: //android.widget.Button[1]
+    priority: 0
+  - name: XPATH
+    value: //android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.widget.Button[1]
+    priority: 1
+projectParameters: []
+addons: []
