@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mobile/models/models.dart';
+import 'package:mobile/widgets/widgets.dart';
 
 import '../screens/details.dart';
 
@@ -18,11 +19,18 @@ class _MovieCardState extends State<MovieCard> {
     return GestureDetector(
       onTap: () {
         // Go to movie detail page
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => Detail(),
+        showModalBottomSheet(
+          // enableDrag: false,
+          // isDismissible: false,
+          backgroundColor: const Color(0xff292929),
+          isScrollControlled: true,
+          shape: const RoundedRectangleBorder(
+            borderRadius: BorderRadius.vertical(
+              top: Radius.circular(20),
+            ),
           ),
+          context: context,
+          builder: (context) => ModalBottomInfo(item: widget.movie),
         );
       },
       child: Container(
