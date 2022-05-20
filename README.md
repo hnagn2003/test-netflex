@@ -2,7 +2,7 @@
 
 Project bài tập lớn Phát triển ứng dụng di động 
 
-
+[Báo cáo](https://1drv.ms/w/s!AmfKm6DbipzTgWrndUcQDte0yfP7) / 
 ## Tuần 5
 
 
