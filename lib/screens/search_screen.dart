@@ -4,7 +4,9 @@ import 'package:flutter/material.dart';
 import 'package:mobile/data/data.dart';
 import 'package:mobile/models/profile.dart';
 import 'package:mobile/widgets/widgets.dart';
+import 'package:provider/provider.dart';
 
+import '../Database.dart';
 import '../models/content_model.dart';
 import 'screens.dart';
 

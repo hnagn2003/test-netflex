@@ -24,7 +24,8 @@ class ModalBottomInfo extends StatelessWidget {
                 width: 100,
                 decoration: BoxDecoration(
                   image: DecorationImage(
-                    image: AssetImage(item.imageUrl),
+                    // image: AssetImage(item.imageUrl),
+                    image: NetworkImage(item.imageUrl),
                     fit: BoxFit.cover,
                   ),
                 ),
@@ -46,25 +47,24 @@ class ModalBottomInfo extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 3.0),
-                      child: Row(
-                        children: const [
-                          Text(
-                            '2022',
-                            style: TextStyle(
-                              color: Colors.grey,
-                              fontSize: 12.0,
-                            ),
+                    padding: const EdgeInsets.symmetric(vertical: 3.0),
+                    child: Row(
+                      children: [
+                        Text(
+                          item.releaseYear,
+                          style: const TextStyle(
+                            color: Colors.grey,
+                            fontSize: 12.0,
                           ),
-                          SizedBox(
-                            width: 10,
-                          ),
-                          Text(
-                            '13+',
-                            style: TextStyle(
-                              color: Colors.grey,
-                              fontSize: 12.0,
-                            ),
+                        ),
+                        const SizedBox(
+                          width: 10,
+                        ),
+                        Text(
+                          item.ageLimit,
+                          style: const TextStyle(
+                            color: Colors.grey,
+                            fontSize: 12.0,
                           ),
                           // ),
                           SizedBox(
