@@ -164,7 +164,7 @@ class _VideoOverlayWidgetState extends State<VideoOverlayWidget> {
                 ),
               ),
               onPressed: () {
-                _showDialog(context);
+                // _showDialog(context);
               },
               style: ElevatedButton.styleFrom(
                 primary: Colors.transparent,

@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:mobile/data/data.dart';
 import 'package:mobile/models/profile.dart';
 import 'package:mobile/widgets/widgets.dart';
+import 'package:provider/provider.dart';
 
+import '../Database.dart';
 import 'screens.dart';
 
 class SearchPage extends StatefulWidget {
@@ -37,8 +39,8 @@ class _SearchPageState extends State<SearchPage> {
                 context,
                 MaterialPageRoute(
                   builder: (context) => ProfileScreen(
-                     profiles: demoProfile[0],
-                   ),
+                    profiles: demoProfile[0],
+                  ),
                 ),
               );
             },
@@ -105,9 +107,9 @@ class _SearchPageState extends State<SearchPage> {
                 ListView.builder(
                   shrinkWrap: true,
                   physics: const NeverScrollableScrollPhysics(),
-                  itemCount: myList.length,
+                  itemCount: context.watch<Database>().content.length,
                   itemBuilder: (context, index) => MovieCard(
-                    movie: myList[index],
+                    movie: context.watch<Database>().content[index],
                   ),
                 ),
               ],
