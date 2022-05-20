@@ -1,16 +1,26 @@
 # Mobile
 
 Project bài tập lớn Phát triển ứng dụng di động 
+## Nhóm 16
 
-[Báo cáo](https://1drv.ms/w/s!AmfKm6DbipzTgWrndUcQDte0yfP7) / 
-## Tuần 5
+| Họ và tên        | MSSV     |
+| ---------------  | -------- |
+| Nguyễn Trọng Đạt | 19021240 |
+| Nguyễn Văn Hải   | 19021264 |
+| Vũ Thế Nam       | 19021337 |
+
+[Báo cáo](https://1drv.ms/w/s!AmfKm6DbipzTgWrndUcQDte0yfP7)
 
 
-
-- ![](screenshots/profile.png)
-- ![](screenshots/play1.png)
-- ![](screenshots/play2.png)
-
+## Installation
+1. Clone the repo
+    ```sh
+    git clone https://github.com/hainv01/mobile.git
+   ```
+2. Run the app
+    ```sh
+    flutter run
+   ```
 ## Test
 1. Test login success
 2. Test login with invalid email
@@ -23,11 +33,5 @@ Project bài tập lớn Phát triển ứng dụng di động
 9. Test comming soon 
 10. Test profile
 
-![img](/test/e2e-testing/Login/login1.png)
-![img](/test/e2e-testing/Login/login2.png)
-![img](/test/e2e-testing/Login/login_success.png)
-![img](/test/e2e-testing/Signup/signup1.png)
-![img](/test/e2e-testing/Signup/singup2.png)
-![img](/test/e2e-testing/Test_comming_soon.png)
-![img](/test/e2e-testing/Test_modal_bottom_infomation.png)
-![img](/test/e2e-testing/Test_search_screen.png)
+[Test link](https://github.com/hainv01/mobile/tree/master/test/e2e-testing)
+
