@@ -9,7 +9,7 @@ Project bài tập lớn Phát triển ứng dụng di động
 | Nguyễn Văn Hải   | 19021264 |
 | Vũ Thế Nam       | 19021337 |
 
-[Báo cáo](https://1drv.ms/w/s!AmfKm6DbipzTgWrndUcQDte0yfP7)
+[Báo cáo](https://1drv.ms/w/s!AmfKm6DbipzTgWrndUcQDte0yfP7)/[Figma](https://www.figma.com/file/qPyjLPbv7LFjbz0KAPHY8c/Netflix?node-id=0%3A1)
 
 
 ## Installation
