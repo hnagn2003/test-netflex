@@ -4,3 +4,7 @@ export 'coming_soon.dart';
 export 'search_screen.dart';
 export 'profiles_more.dart';
 export 'login.dart';
+export 'details.dart';
+export 'splash.dart';
+export 'video_screen.dart';
+export 'signup.dart';

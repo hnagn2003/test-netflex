@@ -1,22 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:mobile/screens/details.dart';
+import 'package:mobile/screens/download_screen.dart';
 import 'package:mobile/screens/screens.dart';
-// import 'package:mobile/details.dart';
-import 'package:mobile/models/profile.dart';
-import 'package:mobile/screens/profiles_more.dart';
 
 class NavScreen extends StatefulWidget {
+  const NavScreen({Key? key}) : super(key: key);
+
   @override
   _NavScreenState createState() => _NavScreenState();
 }
 
 class _NavScreenState extends State<NavScreen> {
   final List<Widget> _screens = [
-    MyHomePage(key: PageStorageKey('homeScreen')),
+    const MyHomePage(key: PageStorageKey('homeScreen')),
     // SearchPage(),
-    ComingSoon(),
-    Detail(),
-
+    const ComingSoon(),
+    // const Detail(),
+    const DownloadPage(),
+    // LoginScreen(),
   ];
 
   final Map<String, IconData> _icons = const {

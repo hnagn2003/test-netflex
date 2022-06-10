@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:mobile/assets.dart';
 import 'package:mobile/models/profile.dart';
 import 'package:mobile/widgets/vertical_icon_button.dart';
+import 'package:page_transition/page_transition.dart';
 
-import '../data/data.dart';
 import 'screens.dart';
 
 class ComingSoon extends StatelessWidget {
@@ -16,7 +16,8 @@ class ComingSoon extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.black,
-        title: Text(
+        automaticallyImplyLeading: false,
+        title: const Text(
           'Coming Soon',
           style: TextStyle(
             fontSize: 20.0,
@@ -27,18 +28,22 @@ class ComingSoon extends StatelessWidget {
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(
-                  builder: (context) => SearchPage(),
+                PageTransition(
+                  type: PageTransitionType.rightToLeft,
+                  duration: const Duration(milliseconds: 300),
+                  reverseDuration: const Duration(milliseconds: 300),
+                  child: const SearchPage(),
                 ),
               );
             },
-            icon: Icon(Icons.search),
+            icon: const Icon(Icons.search),
             color: Colors.white,
           ),
           const SizedBox(
             width: 7.0,
           ),
           IconButton(
+            padding: const EdgeInsets.only(right: 15.0),
             icon: Container(
               width: 25,
               height: 25,
@@ -51,8 +56,11 @@ class ComingSoon extends StatelessWidget {
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(
-                  builder: (context) => ProfileScreen(
+                PageTransition(
+                  type: PageTransitionType.rightToLeft,
+                  duration: const Duration(milliseconds: 300),
+                  reverseDuration: const Duration(milliseconds: 300),
+                  child: ProfileScreen(
                     profiles: demoProfile[0],
                   ),
                 ),
@@ -85,9 +93,12 @@ class ComingSoon extends StatelessWidget {
                     ),
                   ),
                 ),
-                Icon(
-                  Icons.keyboard_arrow_right_rounded,
-                  color: Colors.white,
+                Padding(
+                  padding: EdgeInsets.only(right: 10.0),
+                  child: Icon(
+                    Icons.keyboard_arrow_right_rounded,
+                    color: Colors.white,
+                  ),
                 ),
               ],
             ),
@@ -96,7 +107,7 @@ class ComingSoon extends StatelessWidget {
           Container(
             width: 140,
             height: 190,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               image: DecorationImage(
                 image: AssetImage(Assets.atla),
                 fit: BoxFit.cover,
@@ -109,7 +120,7 @@ class ComingSoon extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Image(image: AssetImage(Assets.atlaTitle)),
+                const Image(image: AssetImage(Assets.atlaTitle)),
                 Row(
                   children: [
                     VerticalIconButton(
@@ -123,7 +134,9 @@ class ComingSoon extends StatelessWidget {
                     VerticalIconButton(
                       icon: Icons.info_outline,
                       title: 'Info',
-                      onTap: () => print('Info'),
+                      onTap: () => {
+                        // Showmodalinfo(context).showmodalinfo()
+                      },
                     ),
                   ],
                 ),
@@ -135,7 +148,7 @@ class ComingSoon extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 10.0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
+              children: const [
                 Text(
                   'Season 1 coming April 12',
                   style: TextStyle(
@@ -143,7 +156,7 @@ class ComingSoon extends StatelessWidget {
                     color: Colors.grey,
                   ),
                 ),
-                const SizedBox(
+                SizedBox(
                   height: 10.0,
                 ),
                 Text(
@@ -155,7 +168,7 @@ class ComingSoon extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  sintelContent.description,
+                  "sintelContent.description",
                   style: TextStyle(
                     fontSize: 12.0,
                     color: Colors.grey,
