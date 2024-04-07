@@ -1,36 +1,46 @@
 {
   "project_info": {
-    "project_number": "821877184633",
-    "project_id": "netflix-8b506",
-    "storage_bucket": "netflix-8b506.appspot.com"
+    "project_number": "102199281876",
+    "firebase_url": "https://mobile-2d5e2-default-rtdb.firebaseio.com",
+    "project_id": "mobile-2d5e2",
+    "storage_bucket": "mobile-2d5e2.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:821877184633:android:3de06373112ec92bec5ca8",
+        "mobilesdk_app_id": "1:102199281876:android:62bf59e63ba42012bc5341",
         "android_client_info": {
-          "package_name": "com.example.mobile"
+          "package_name": "UET.VNU"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "821877184633-aok8j4oaofjmb8lt9r2c1nammf2jb0h5.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCbpgaNR_PIH9XXWSKzraLrmKo6xqEkM9A"
+          "current_key": "AIzaSyA2k1CAy0n7r3PrybvM5_l2CkKlie56F6Y"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "821877184633-aok8j4oaofjmb8lt9r2c1nammf2jb0h5.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:102199281876:android:eb65222bbc4ceedcbc5341",
+        "android_client_info": {
+          "package_name": "com.example.mobile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2k1CAy0n7r3PrybvM5_l2CkKlie56F6Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
         }
       }
     }

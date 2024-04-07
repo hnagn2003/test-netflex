@@ -27,6 +27,12 @@ class _SignInButtonState extends State<SignInButton> {
 
   @override
   Widget build(BuildContext context) {
+//       _auth.authStateChanges()
+//         .listen((User? user) {
+//           if (user != null) {
+//             print(user.uid);
+//           }
+//         });
     Size size = MediaQuery.of(context).size;
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 20),
